@@ -16,25 +16,26 @@ else{
 }
 
 
-if (isset($_POST['submit'])){
-	$emailid=$_POST['emailid'];
-	$password=$_POST['password'];
+
+	$emailid= $_POST['emailid'];
+	$password =$_POST['password'];
+	echo $emailid;
+	echo"<br>";
+	echo $password;
+
+    $result = $conn -> query("INSERT INTO form ( emailid , password, `date`) VALUES ('$emailid', '$password', current_timestamp())");
 
 
-	$sql=" INSERT INTO form ( `emailid`, `password`, `date`) VALUES ( '$emailid', '$password', current_timestamp())";
-
-    $result=mysqli_query($conn,$sql);
     if ($result){
-    	echo("data inserted");
+    	echo ("<br> data inserted");
     }else{
-    	echo("not inserted");
+    	echo("not inserted" .mysqli_error($conn));
     }
 
 
 
 
 
-} 
 
 
 
