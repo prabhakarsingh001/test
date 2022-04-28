@@ -1,3 +1,5 @@
+<!-- not done yet -->
+
 <?php 
 // INSERT INTO `notes` (`sno`, `title`, `description`, `date`) VALUES ('1', 'food', 'cheese,burger,mutton', current_timestamp());
 
@@ -40,23 +42,6 @@ $description=$_POST['description'];
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -74,6 +59,13 @@ $description=$_POST['description'];
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+     
+      <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  -->
+     
+
+ 
 
     <title>Hello, world!</title>
   </head>
@@ -149,14 +141,20 @@ $result=mysqli_query($conn , $sql);
 
 
  ?> -->
- <table class="table">
+ <table class="table" id="myTable">
   <thead>
     <tr>
       <th scope="col">sno</th>
       <th scope="col">title</th>
       <th scope="col">description</th>
       <th scope="col">actions</th>
+
+
+
+
+    
     </tr>
+
   </thead>
   <tbody>
      <?php 
@@ -169,7 +167,7 @@ $result=mysqli_query($conn , $sql);
       <th scope='row'>" .$row['sno']  ."</th>
       <td> ".$row['title']  ."</td>
       <td>".$row['description']  ."</td>
-      <td>actions</td>
+      <td><a href='/del'>delete </a><a href='/edit'>edit </a></td>
     </tr>";
     
   // echo $row['sno'] . "title " .$row['title'] . "description " . $row['description'];
@@ -193,7 +191,17 @@ $result=mysqli_query($conn , $sql);
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <script scr="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"></script>
+     <script>
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+  </script>
+
   </body>
 </html>
 </body>
 </html>
+
+
+
