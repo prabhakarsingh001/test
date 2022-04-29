@@ -11,7 +11,7 @@ if(!$conn){
 	die("connection not successful" . mysqli_connect_error());
 }
 else{
-	echo("connection successful");
+	echo("connection successful <br> ");
 }
 // $conn=mysqli_connect("localhost","root","", "restapi") or die("connection failed");
 
