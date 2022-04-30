@@ -16,7 +16,7 @@ $city=$data['scity'];
 include "rest_conn.php";
 
 $sql= " UPDATE apitable SET student_name ='{$name}', age='{$age}', city='{$city}' where sid=$id";
-// $sql=" UPDATE apitable SET student_name=[$name], age=[$age], city=[$city] WHERE sid=[$id]";
+
 
 
 if (mysqli_query($conn,$sql)) {
