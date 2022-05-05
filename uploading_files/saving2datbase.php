@@ -1,3 +1,8 @@
+<!-- not done -->
+<!-- not done -->
+<!-- not done -->
+
+
 <?php 
 if(isset($_FILES['image'])){
 	echo "<pre>";
@@ -18,7 +23,7 @@ if(isset($_FILES['image'])){
 ?>
 <?php 
 if (isset($_POST['image'])){
-	$conn=mysqli_connect("localhost","root","","files") or die("connection failed")
+	$conn=mysqli_connect("localhost","root","","files") or die("connection failed");
 }
 
 

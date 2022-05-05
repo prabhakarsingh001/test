@@ -16,7 +16,7 @@ $serial_no= $data['serialn'];
 
 
 
-//only to read data from the browser and poatman 
+//only to read data from the browser and postman 
 // to check api only 
 
 include "conapi.php";

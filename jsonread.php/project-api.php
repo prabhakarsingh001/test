@@ -1,5 +1,4 @@
-<!-- done -->
-<!-- code running -->
+<!-- journey api testing code in html page -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,29 +13,48 @@
 <div id="main">
 	<div id="header">
 		
-		<h1>Read Json Data</h1>
+		<!-- <h1>project-api-conn</h1> -->
+		<!-- <h3>dream place!!!!</h3> -->
 </div>
-<div id="load-data"></div>	
+<div id="load-data">
+
+</div>
+
+
+
+
 
 
 </div>
+<!-- <img id="my_image" src=""/> -->
 <!-- jquery script begins -->
+<img class="img1" src="" />
 <script>
 	$(document).ready(function(){
 		// ajax starts from here
 		$.ajax({
 // json placeholder api url to be converted to html files
-			url:"https://jsonplaceholder.typicode.com/posts",
+			url:"https://journeyonapi.herokuapp.com/api/category/getcategory",
 			type:"GET",
-			success:function(data){
+			success: function(data){
 			// console.log(data);
-			$.each(data, function(key ,value){
-			$("#load-data").append(value.id + " " + value.title + "<br>" + value.body+ "<br>")
+			$.each(data.categories,function(key,value){
+            //    "<tr> </td>"+value.name +"</td></tr>"
+				
+			
+			 $("#load-data").append('<tr>'+'<td>'+value.name+'</td>'+'<td>'+value.slug+'</td></tr>');
+			 
+			 $("#load-data").append($("<img>",{src: value.categoryImage}));
+			
+			//  $('.img1').attr('src',value.categoryImage);
+			// //  "<tr> </td>"+value.name +"</td></tr>"
+			 
+			
+			});
+		}
+			});
+		});
 
-			})
-			}
-		})
-	});
 </script>
 
 

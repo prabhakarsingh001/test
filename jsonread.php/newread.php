@@ -26,12 +26,12 @@
 		// ajax starts from here
 		$.ajax({
 // json placeholder api url to be converted to html files
-			url:"https://jsonplaceholder.typicode.com/posts",
+			url:"https://journeyonapi.herokuapp.com/api/city/get",
 			type:"GET",
 			success:function(data){
 			// console.log(data);
 			$.each(data, function(key ,value){
-			$("#load-data").append(value.id + " " + value.title + "<br>" + value.body+ "<br>")
+			$("#load-data").append(value.id + " " + value.title + "<br>")
 
 			})
 			}
