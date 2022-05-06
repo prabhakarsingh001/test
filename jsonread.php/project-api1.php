@@ -23,13 +23,65 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        test1
+        
+<div class="card" style="width: 18rem;">
+  <img src="https://res.cloudinary.com/nik-cloud-cybertize/image/upload/v1649842460/journeyon/city/uma1nnslyw5k4n1gda1j.jpg" class="card-img-top" alt="internet too slow">
+  <div class="card-body">
+    <h5 class="card-title">See&Do</h5>
+    <p class="card-text"></p>
+    <a href="project-api.php" class="btn btn-primary" id="btn1">check details</a>
+  </div>
+</div>
+      </div>
+      <div class="col-3">
+        test
+      </div>
+      <div class="col-3">
+        test
+      </div>
+      <div class="col-3">
+        test
+      </div>
+    </div>
 
+  </div>
 
 
 <div class="card" style="width: 18rem;">
   <img src="https://res.cloudinary.com/nik-cloud-cybertize/image/upload/v1649842460/journeyon/city/uma1nnslyw5k4n1gda1j.jpg" class="card-img-top" alt="internet too slow">
   <div class="card-body">
-    <h5 class="card-title">singapore</h5>
+    <h5 class="card-title">See&Do</h5>
+    <p class="card-text"></p>
+    <a href="project-api.php" class="btn btn-primary" id="btn1">check details</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://res.cloudinary.com/nik-cloud-cybertize/image/upload/v1649842050/journeyon/supercat/kzicvoyhliwkpgnttkrx.jpg" class="card-img-top" alt="internet too slow">
+  <div class="card-body">
+    <h5 class="card-title">Eat & Drink</h5>
+    <p class="card-text">text to be edited</p>
+    <a href="project-api.php" class="btn btn-primary" id="btn1">check details</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://res.cloudinary.com/nik-cloud-cybertize/image/upload/v1649842133/journeyon/supercat/fl0rhugpngts3pwo38b9.jpg" class="card-img-top" alt="internet too slow">
+  <div class="card-body">
+    <h5 class="card-title">Places to stay</h5>
+    <p class="card-text"></p>
+    <a href="project-api.php" class="btn btn-primary" id="btn1">check details</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://res.cloudinary.com/nik-cloud-cybertize/image/upload/v1649842145/journeyon/supercat/hbtq7t81jdj3xkt90gjb.jpg" class="card-img-top" alt="internet too slow">
+  <div class="card-body">
+    <h5 class="card-title">shopping</h5>
     <p class="card-text"></p>
     <a href="project-api.php" class="btn btn-primary" id="btn1">check details</a>
   </div>
@@ -56,4 +108,4 @@ $('#load-data').load('project-api.php');
 
 
   </body>
-</html>
+</html
