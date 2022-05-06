@@ -14,46 +14,28 @@
 </head>
 
 <body>
-    <div id="main">
-        <div id="header">
 
-            <!-- <h1>project-api-conn</h1> -->
-            <!-- <h3>dream place!!!!</h3> -->
-        </div>
-        <div class="container">
-            <div class="row" id="load-data">
-
-            </div>
-
-        </div>
-
-
-
-
-
-
+    <div class="row" id="load-data">
 
     </div>
-    <!-- <img id="my_image" src=""/> -->
-    <!-- jquery script begins -->
-    <!-- <img class="img1" src="" /> -->
+
+
+    <!-- jquery begins -->
     <script>
         $(document).ready(function() {
-            // ajax starts from here
+
             $.ajax({
-                // json placeholder api url to be converted to html files
+
                 url: "https://journeyonapi.herokuapp.com/api/category/getcategory",
                 type: "GET",
                 success: function(data) {
                     // console.log(data);
                     $.each(data.categories, function(key, value) {
-                        
+
                         // correct one 
-                        $("#load-data").append('<div class="card" style="width: 18rem;"><img src='+value.categoryImage+' class="card-img-top" alt="internet too slow"><h4>'+value.name+'</h4></div>');
+                        $("#load-data").append('<div class="card"  style="width: 18rem;"><img src=' + value.categoryImage + ' class="card-img-top" alt="internet too slow"><h4>' + value.name + '</h4> <h5>'+value.slug+'</h5></div>');
 
-                        // testing one
 
-                        // $("#load-data").append('<div class="card" style="width: 18rem;"><img src:"$("<img>",{src: value.categoryImage})" class="card-img-top" alt="internet too slow"><h4>'+value.name+'</h4></div>');
 
 
                     });
