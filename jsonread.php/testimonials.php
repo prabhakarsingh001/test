@@ -1,11 +1,14 @@
 <!-- journey api testing code in html page -->
+<!-- done -->
+
 <!DOCTYPE html>
+
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>read_json_files</title>
+    <title>jr-testimonials</title>
     <!-- adding CDN Jquery url instead of downloading a compresed file -->
     <!-- jquer format to be added before script -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -26,14 +29,14 @@
 
             $.ajax({
 
-                url: "https://journeyonapi.herokuapp.com/api/category/getcategory",
+                url: "https://journeyonapi.herokuapp.com/api/testimonial/get",
                 type: "GET",
                 success: function(data) {
                     // console.log(data);
-                    $.each(data.categories, function(key, value) {
+                    $.each(data.testimonial, function(key, value) {
 
                         // correct one 
-                        $("#load-data").append('<div class="card"  style="width: 18rem;"><img src=' + value.categoryImage + ' class="card-img-top" alt="internet too slow"><h4>' + value.name + '</h4> <h5>'+value.slug+'</h5></div>');
+                        $("#load-data").append('<div class="card"  style="width: 18rem;"><img src=' + value.testimonialImage + ' class="card-img-top" alt="internet too slow">'+'<h4>' + value.name + '</h4> <h5>' + value.designation + '</h5> '+value.description+'</div>');
 
 
 
