@@ -34,10 +34,24 @@
                 success: function(data) {
                     // console.log(data);
                     $.each(data.blog, function(key, value) {
+                        
 
                         // correct one 
-                        $("#load-data").append('<div class="card"  style="width: 18rem;"><img src=' + value.blogPictures[0].img+' class="card-img-top" alt="internet too slow">' + '<h4>' + value.name + '</h4> <h5>' + value.city + '</h5> ' + value.detail + '</div>');
-
+                        // $("#load-data").append('<div class="card"  style="width: 18rem;"><img src=' + value.blogPictures[0].img+' class="card-img-top" alt="internet too slow">' + '<h4>' + value.name + '</h4> <h5>' + value.city + '</h5> ' + value.detail + '</div>');
+                        
+                       $("#load-data").append('<div class="slick-item">
+                            <div class="explore-item dark-sky-blue">
+                                <div class="explore-thumb">
+                                    <a href="ex-half-map-1.html">
+                                        <img src="+value.name+" alt="@"></a>
+                                </div>
+                                <div class="explore-info">
+                                    <h3><a href="ex-half-map-1.html">@</a></h3>
+                                    <span>@</span>
+                                </div>
+                            </div>
+                        </div>');
+                        
 
                     });
                 }

@@ -25,7 +25,6 @@
         $(document).ready(function() {
 
             $.ajax({
-
                 url: "https://journeyonapi.herokuapp.com/api/category/getcategory",
                 type: "GET",
                 success: function(data) {
@@ -33,7 +32,14 @@
                     $.each(data.categories, function(key, value) {
 
                         // correct one 
-                        $("#load-data").append('<div class="card"  style="width: 18rem;"><img src=' + value.categoryImage + ' class="card-img-top" alt="internet too slow"><h4>' + value.name + '</h4> <h5>'+value.slug+'</h5></div>');
+                        console.log(value.name);
+                        if (value.name == 'shopping') {
+                            console.log(value.categoryImage);
+                            $("#load-data").append('<div class="card"  style="width: 18rem;"><img src=' + value.categoryImage + ' class="card-img-top" alt="internet too slow"><h4>' + value.name + '</h4> <h5>' + value.slug + '</h5></div>');
+
+                        }
+
+
 
 
 
