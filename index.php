@@ -1,1 +1,11 @@
-<h1>hello</h1>
+<?php
+
+$i=100;
+while($i<=5){
+    echo $i;
+    echo"<br>";
+    $i++;
+}
+
+
+?>

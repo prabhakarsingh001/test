@@ -41,23 +41,5 @@ else{
 //successful fetching single data
 ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
 

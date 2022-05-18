@@ -1,6 +1,8 @@
 <?php
 
 
+
+
 $server="localhost";
 $username="root";
 $password="";
@@ -12,23 +14,8 @@ if(!$conn){
 	die("connection not successful" . mysqli_connect_error());
 }
 else{
-	echo("connection successful");
+	// echo("connection successful");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ?>
