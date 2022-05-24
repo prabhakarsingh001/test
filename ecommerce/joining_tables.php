@@ -62,9 +62,6 @@ while($data1 = mysqli_fetch_all($data , MYSQLI_ASSOC)) {
 
 
 
-
-
-
 <?php
 // print_r($user_id);
 // exit();
