@@ -5,7 +5,7 @@
 
 include 'postman_config.php';
 
-$sql="SELECT * FROM form|";
+$sql="SELECT * FROM form";
 $result=mysqli_query($conn,$sql) or die("failed");
 
 if (mysqli_num_rows($result)>0) {

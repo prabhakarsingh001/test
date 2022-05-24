@@ -11,12 +11,10 @@ $data=json_decode(file_get_contents("php://input"), true);
 $studentid = $data['newid'];
 
 
-
 include "rest_conn.php";
 
 // $sql="DELETE * FROM apitable  WHERE sid={$studentid}";
 $sql="DELETE FROM apitable WHERE sid={$studentid}";
-
 
 if(mysqli_query($conn,$sql)) {
 
@@ -28,6 +26,7 @@ if(mysqli_query($conn,$sql)) {
 
 
 ?>
+
 
 
 
