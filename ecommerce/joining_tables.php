@@ -1,4 +1,12 @@
-<?php
+<?php  
+// to convert into json format header must be written 
+header('Content-Type:application/json');
+header('Access-Control-Allow-Origin: *');
+
+
+
+
+$data1 = json_decode(file_get_contents("php://input"), true); 
 
 $user_id = $_POST['user_id'];
 
@@ -13,10 +21,11 @@ $data = $conn->query(" SELECT *
    ON  attribute.item_id = productapi.id
     WHERE user_id = '$user_id'");
 
-if (mysqli_num_rows($data) > 0) {
 
-   $data1 = mysqli_fetch_assoc($data);
-   print_r($data1);
+// to convert to json formatn
+while($data1 = mysqli_fetch_all($data , MYSQLI_ASSOC)) {
+   
+   echo json_encode($data1);
 }
 
 ?>
