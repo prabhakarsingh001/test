@@ -1,18 +1,18 @@
-/* .card-img-top{
-    /* height: 100px; */
-    /* width: 100px; */
+.card-img-top{
+    height: 100px;
+    width: 100px;
+}
 
- */
  /* .name{
      visibility: hidden;
  } */
 
-.row{
+/* .row{
     height: fit-content;
-}
-body{
+} */
+/* body{
     background-color: rgb(159, 184, 184);
-}
+} */
 .row{
     height:50px;
 }
@@ -20,7 +20,8 @@ img{
     height:50%;
     width: 50%;
     /* visibility: hidden; */
-}
+
+    }    /* }
 .card{
     max-width: 350px;
     margin: 20px;
@@ -46,4 +47,5 @@ overflow: hidden;
     100%{
         transform:translateX(100%);
     }
-}
+} 
+*/
