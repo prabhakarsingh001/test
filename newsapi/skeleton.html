@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skeleton</title>
+    <style>
+        #page{
+            width:720px;   
+            height:364px;
+            background-color:#ddd;
+            overflow:hidden;
+        }
+        #anim{
+            width:720px;
+            height:100%;
+            background:linear-gradient(to right,#ddd,#f3f3f3,#ddd);
+            position:relative;
+            left:0;
+            animation:demo 1s infinite;
+        }
+        @keyframes demo{
+            from{
+                left: -200px;
+            }
+            to{
+                right:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div id="anim" ></div>
+    </div>
+    <script>
+
+        var image = new Image();
+        image.src = "https://images.pexels.com/photos/11995429/pexels-photo-11995429.jpeg?cs=srgb&dl=pexels-axxel-hernandez-11995429.jpg&fm=jpg";
+
+        image.style.width = "100%";
+        image.onload = function(){
+            document.getElementById("Page").innerHTML = "";
+            document.getElementById("page").apend(image);
+        }
+    </script>
+    <!--  https://images.pexels.com/photos/11995429/pexels-photo-11995429.jpeg?cs=srgb&dl=pexels-axxel-hernandez-11995429.jpg&fm=jpg"; -->
+</body>
+</html>
