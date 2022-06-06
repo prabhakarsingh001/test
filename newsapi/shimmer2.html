@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shimmer2</title>
+    <!-- <link rel="stylesheet" href="shimmer2.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+         </div>
+     </div>
+            <script>
+                $(document).ready(function () {
+                    $.ajax({
+
+                        url: "https://newsapi.org/v2/everything?q=apple&from=2022-05-30&to=2022-05-30&sortBy=popularity&apiKey=a93cfa0af9cd4be385e4766e280af223 ",
+                        type: "GET",
+                        success: function (data) {
+                            console.log(data);
+                            // $.each(data.articles, function (key, value) {
+                                // console.log(value.urlToImage);
+
+                                // $("#loading").append(`<div class="col-12">
+                                //                                 <div class="card-deck">
+                                //                                 <div class="card-image loading "><img src="${value.urlToImage}" alt=""></div>
+                                //                                 <div class="card-info">
+                                //                                 <h3 class="card-title loading"><span>${value.author}</span> </h3>
+                                //                                  <p class="card-description loading"><span>${value.description}</span></p>
+            
+                                //                                 </div>
+                                //                                    </div>
+                                //                                   </div>`);
+                                // //   
+
+                            // });
+                        }
+
+
+                    });
+
+                });
+            </script>
+          
+                        <!-- // <div class="card-img skeleton" id="card-img">
+                        // </div>
+                        // <div class="card-body">
+                        //     <h2 class="card-title skeleton" id="card-title"></h2>
+                        //     <p class="card-intro skeleton" id="card-intro"></p>
+                        // </div> -->
+        
+        <!-- </div>
+    </div> -->
+
+    <!-- <script src="shimmer2.js"></script> -->
+</body>
+
+</html>
