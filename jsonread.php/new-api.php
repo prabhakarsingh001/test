@@ -33,7 +33,7 @@
                     $.each(data.categories, function(key, value) {
 
                         // correct one 
-                        $("#load-data").append('<div class="card"  style="width: 18rem;"><img src=' + value.categoryImage + ' class="card-img-top" alt="internet too slow"><h4>' + value.name + '</h4> <h5>' + value.slug + '</h5></div>');
+                        // $("#load-data").append('<div class="card"  style="width: 18rem;"><img src=' + value.categoryImage + ' class="card-img-top" alt="internet too slow"><h4>' + value.name + '</h4> <h5>' + value.slug + '</h5></div>');
 
 
 
