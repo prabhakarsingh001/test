@@ -49,7 +49,7 @@
 
                         $("#load-data").append(`<div class="col-12">
                                                     <div class="card-deck">
-                                                    <div class="card-image loading "><img src="${value.urlToImage}" alt=""></div>
+                                                    <div class="card-image loading "><img src="" alt=""></div>
                                                     <div class="card-info">
                                                     <h3 class="card-title loading"><span>${value.author}</span> </h3>
                                                      <p class="card-description loading"><span>${value.description}</span></p>

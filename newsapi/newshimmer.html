@@ -29,7 +29,9 @@
 
 
     <div class="container">
-        <div class="card" id="loading">
+        <!-- <div class="card" id="loading"> -->
+        <div class="card" id="load-data">
+
         
         </div>
 
@@ -48,24 +50,14 @@
 
 
 
-                            // $("#load-data").append('<div class="card col-12"  style="width: 40rem;">< div class ="card-image loading "><img src=' + value.urlToImage + ' class="card-img-top" alt="internet too slow">' + '<div class"card-info"><h3 class="card-title loading"><span>' + value.author + '</span></h3> <h5>' + value.description + '</h5><pclas="card-description loading"><span> ' + value.detail + '<br><a href=' + value.url + ' class="btn btn-primary">Read More</a></button></div></div>');
+                            // $("#load-data").append('<div class="card col-12">< div class ="card-image loading "><img src=' + value.urlToImage + ' class="card-img-top" alt="internet too slow">' + '<div class"card-info"><h3 class="card-title loading"><span>' + value.author + '</span></h3> <h5>' + value.description + '</h5><pclas="card-description loading"><span> ' + value.detail + '<br><a href=' + value.url + ' class="btn btn-primary">Read More</a></button></div></div>');
 
 
-                            // $("#load-data").append('<div class= "col-4 "><div class = "card-deck">
-                            //     <div class="card-image loading"><img src='+value.urlToImage+'alt=""></div><div class="card-info"><h3 class="card-title loading"><span>'+value.name+'</span><h3><p class="card-description loading"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. < /span > < /p ><div><div></div>');
 
-
-                            $("#loading").append(`<div class="col-12">
-                                                    <div class="card-deck">
-                                                    <div class="card-image loading "><img src="${value.urlToImage}" alt=""></div>
-                                                    <div class="card-info">
-                                                    <h3 class="card-title loading"><span>${value.author}</span> </h3>
-                                                     <p class="card-description loading"><span>${value.description}</span></p>
-
-                                                    </div>
-                                                       </div>
-                                                      </div>`);
-                                                       
+                            // $("#load-data").append(`<div class="col-12"><div class="card-deck"><div class="card-image "><img src="${value.urlToImage}" alt=""></div><div class="card-info"><h3 class="card-title"><span>${value.author}</span> </h3><p class="card-description"><span>${value.description}</span></p></div></div></div>`);
+                                  
+                            
+                            $("#load-data").append('<div class="col-4"><div class="card-deck"><div class="card-image loading"><img src="" alt=""></div><div class="card-info"><h3 class="card-title loading"><span></span></h3><p class="card-description loading"><span></span></p></div></div></div>');
 
                         });
                     } 
@@ -80,14 +72,15 @@
 
     <script type="text/javascript">
         const cardImages = document.querySelectorAll(".card-image");
+        const cardinfo = document.querySelectorAll("card-info");
         const cardTitles = document.querySelectorAll(".card-title");
-            //  cardTitles.style.color="red";
         const cardDescriptions = document.querySelectorAll(".card-description");
-        // const cardMediaIcons = document.querySelectorAll(".card-mediaIcons a");
+        
         const cardImgs = document.querySelectorAll(".card-image img");
         const cardTitleSpans = document.querySelectorAll(".card-title span");
         const cardDescSpans = document.querySelectorAll(".card-description span");
-        // const mediaIcons = document.querySelectorAll(".card-mediaIcons a i");
+        // const btn = document.querySelectorAll(".btn");
+        
 
         const renderCard = () => {
             //Remove the skeleton loading effect
@@ -100,6 +93,10 @@
             cardDescriptions.forEach((cardDescription) => {
                 cardDescription.classList.remove("loading");
             });
+
+            // cardbtn.foreach((cardbtn)=>{
+            //     cardbtn.classList.remove("loading");
+            // });
             // cardMediaIcons.forEach((cardMediaIcon) => {
             //     cardMediaIcon.classList.remove("loading");
             // });
@@ -114,12 +111,10 @@
             cardDescSpans.forEach((cardDescSpan) => {
                 cardDescSpan.style.visibility = "visible";
             });
-            // mediaIcons.forEach((mediaIcon) => {
-            //     mediaIcon.style.visibility = "visible";
-            //  title.textContent = 'Title';
-            // description.textContent = 'This is the description.';
-            // image.innerHTML = `<img src="${image - source}`;
-            // // });
+
+            //  cardbtn.foreach((cardbtn) => {
+            //     cardbtn.style.visibility = "visibility";
+            // });
         }
 
         //Execute renderCard on setTimeout

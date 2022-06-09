@@ -10,8 +10,9 @@ $sql1 ="SELECT id FROM productapi  ORDER BY id DESC LIMIT 1 ";
   $result1= mysqli_query($conn,$sql1);
   if(mysqli_num_rows($result1)>0){
       $row=mysqli_fetch_assoc($result1);
-      $category_id =$row['id'];
 
+
+     $category_id =$row['id'];
      $image=$_FILES['image'];
 
     foreach($_FILES['image']['tmp_name'] as $key => $value)

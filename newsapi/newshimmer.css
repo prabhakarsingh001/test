@@ -29,6 +29,7 @@ body {
     border-radius: 2px;
     box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
     overflow: hidden;
+    
 }
 
 .card-image {
@@ -39,6 +40,8 @@ body {
 .card-image img {
     max-width: 100%;
     height: auto;
+    margin-top: 20px;
+    border-radius: 2px solid black;
     visibility: hidden;
 }
 
@@ -55,6 +58,7 @@ body {
     position: relative;
     color: #222;
     padding: 20px;
+    overflow: hidden;
 }
 
 .card-info h3 {
@@ -67,6 +71,16 @@ body {
     font-size: 1em;
     margin-bottom: 15px;
 }
+.card-info a{
+    margin-bottom: 20px;
+    
+}
+/* 
+.btn{
+    margin-bottom:10%;
+    padding-top: 50%;
+    visibility: hidden;
+} */
 
     
 

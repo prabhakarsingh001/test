@@ -11,12 +11,15 @@ if(mysqli_num_rows($result)>0){
 	<tr>
 	<th>id</th>
 	<th>name</th>
-	</tr>';
+	</tr> ';
  
 
 
 	while($row=mysqli_fetch_assoc($result)){
-		$output .= "<tr><td>{$row["id"]}</td><td>{$row["firstname"]} {$row["lastname"]}</td></tr>";
+		$output .= "<tr>
+		<td>{$row["id"]}</td>
+		<td>{$row["firstname"]}{$row["lastname"]}</td>
+		</tr>";
 
             
 	}

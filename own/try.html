@@ -1,98 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>crud</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            background-color: coral;
+            border-style: 2px dotted black ;
+            /* width: 200px; */
+            height: 500px;
+        }
+        .container{
+            background-color: aqua;
+            /* width: 200px; */
+            height: 250px;
+        }
+        .row{
+            background-color: black;
+            height: 100px;
+        }
+        p{
+            color: beige;
+        }
+    </style>
 </head>
-
 <body>
- 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-
-<div class="container">
-    <form>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <section class="content">
+        <div class="container">
+            <div class="row col-md-6 col-md-12">
+                <div class="card col-md-6 col-md-12">
+                    <div class="heading">baout</div>
+                    <img src="car.jpg" alt="car" >
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, temporibus?</p>
+                    <p class="text-align:justify  " style="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, tempora.</p>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </section> 
+    <section>
+        <div class="grid col-md-6 col-md-12">
+            <div class="para" height="20px" color="red">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="newpara" heigt="40px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum vero blanditiis distinctio quidem tenetur qui maiores totam atque ea nobis.</div>
         </div>
-       
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
-
-<div class="table2">
-
-<table class="table" padding="10px">
-    <thead class="thead-dark">
-        <tr>
-            <th scope="col">sno</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">address</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mohit</td>
-            <td>ohito</td>
-            <td>@ohit</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>rain</td>
-            <td>rain</td>
-            <td>@rain</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>dhoni</td>
-            <td>dhoni</td>
-            <td>dhoni</td>
-        </tr>
-    </tbody>
-</table>
-
-
-</table>
-</div>
+    </section>
+    <div style="height:500px; background-color: blue; color: aliceblue;"><h2 style="text-align:right-down;"> hiii</h2></div>
 </body>
 </html>
-    
-
-
-    <!-- <tr style>
-
-        <th>sno</th>
-        <th>name</th>
-        <th>rollno</th>
-        <th>address</th>
-        <th>class</th>
-        </th>
-    </tr> -->

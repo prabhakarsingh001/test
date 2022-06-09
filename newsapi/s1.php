@@ -20,11 +20,10 @@
            
                 <div class="col-4">
                     <div class="card-deck">
-                        <div class="card-image loading "><img src="car.jpg" alt=""></div>
+                        <div class="card-image loading "><img src="" alt=""></div>
                         <div class="card-info">
-                            <h3 class="card-title loading"><span>Steven Reeves</span></h3>
-                            <p class="card-description loading"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
+                            <h3 class="card-title loading"><span></span></h3>
+                            <p class="card-description loading"><span></span></p>
 
                         </div>
                     </div>

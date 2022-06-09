@@ -35,7 +35,7 @@
 
 
     <div class="container">
-        <div class="heading">CSS Skeleton Loader</div>
+        <div class="heading">NewsApi</div>
         <div class="loader">
             <div class="boxes">
                 <article>
@@ -50,8 +50,8 @@
             </div>
         </div>
         <div class="content">
-            <div class="boxes" id ="load-data">
-                <article>
+            <div class="boxes" >
+                <article id="load-data">
                
                 <script>
                     $(document).ready(function () {
@@ -64,19 +64,7 @@
                                 $.each(data.articles, function (key, value) {
                                     // console.log(value.urlToImage);
 
-                                    $("#load-data").append(`
-                                        <div class="image">
-                                            <img
-                                                src="${value.urlToImage}" />
-                                        </div>
-                                        <div class="text">
-                                            <h3>${value.author}</h3>
-                                            <p>
-                                                ${value.description}
-                                            </p>
-                                        </div>
-                                    `);
-
+                                    // $("#load-data").append(`<div class="image"><img src="${value.urlToImage}"/></div><divclass="text"><h3>${value.author}</h3><p>${value.description}</p></div>`);
 
                                 });
                             }

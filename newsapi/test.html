@@ -1,24 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>api</title>
+    <title>
+        Skeleton Screen
+        
+    </title>
     <link rel="stylesheet" href="testhtml.css" class="rel">
+
+  
 </head>
-<body>
-    
-    <div class="container">
-        <div class="card">
-            <div class="card-image loading"><img src="car.jpg" alt="car"></div>
-            <div class="cad-info">
-                <h3 class="card-title loading ">
-                    <span>prabhakarsingh</span>
-                </h3>
-                <p class="card-description loading "><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, veritatis!</span></p>
-            </div>
-        </div>
-    </div>
+
+<!-- <body>
+    <div class="card">
+        <div class="card__image loading"> <img src="car.jpg" alt="car"></div>
+        <div class="card__title loading"></div>
+        <div class="card__description loading"></div>
+    </div> -->
+
+
+    <div class="card"  id="load-data" >
+        <!-- <div class="card__image loading"></div>
+        <div class="card__title loading"></div>
+        <div class="card__description loading"></div> -->
+    </div> 
+
+<script>
+    $(document).ready(function () {
+        $.ajax({
+
+            url: "https://newsapi.org/v2/everything?q=apple&from=2022-05-30&to=2022-05-30&sortBy=popularity&apiKey=a93cfa0af9cd4be385e4766e280af223 ",
+            type: "GET",
+            success: function (data) {
+                console.log(data);
+                $.each(data.articles, function (key, value) {
+                    console.log(value.urlToImage);
+                        
+                    $("#load-data").append('<div class="card__image loading"><img src=""</div><div class= "card__title loading" ></div><div class="card__description loading"></div>');
+
+
+
+                });
+            }
+
+
+        });
+
+    });
+</script>
+
 </body>
+
+
 </html>

@@ -8,7 +8,7 @@ $result = array();
 	// $item_id=$_POST['item_id'];
 	$description =$_POST['description'];
 	$category =$_POST['category'];
-	// $file=$_FILES['image_single'];
+	$file=$_FILES['image_single'];
 	
 	
 	
@@ -24,7 +24,7 @@ $result = array();
      	
 	move_uploaded_file($tmp_name, "img/".$image_single);
 
-	include('multiple_image_upload.php');
+	// include('multiple_image_upload.php');
 // }
      if($result)
 	{

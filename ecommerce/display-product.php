@@ -46,7 +46,7 @@
             ?>
 
                 <div class="card col-4 width: 18rem;">
-                    <img src="../img/<?php echo $res['image'];  ?>" class="card-img-top" alt="product">
+                    <img width="30%"src="../img/<?php echo $res['image'];  ?>" class="card-img-top" alt="product">
                     <div class="card-body">
                         <div>
                             <h5 class="card-title"><?php echo $res['name'];  ?></h5>
@@ -54,8 +54,7 @@
                             <span> <?php echo " <br>category:" . $res['category'];  ?></span>
                             <span><?php echo " <br>price:" . $res['price'];  ?></span>
                         </div>
-                        <!-- <span></span> -->
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                      
                     </div>
                 </div>
 
